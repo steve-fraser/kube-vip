@@ -31,7 +31,7 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: >-
             ghcr.io/steve-fraser/kube-vip:${{ github.ref_name }},
-            ghcr.io/kube-vip/kube-vip:latest
+            ghcr.io/steve-fraser/kube-vip:latest
       - name: Build iptables version and push main branch
         id: docker_build_iptables
         uses: docker/build-push-action@v6
